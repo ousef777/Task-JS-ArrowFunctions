@@ -1,9 +1,8 @@
 /**
  * Rewrite the following `greet` function as an arrow function
  */
-function greet(name) {
-  return `Hello ${name}`;
-}
+greet = (name) => `Hello ${name}`;
+
 
 /**
  * sum(a, b):
@@ -11,9 +10,9 @@ function greet(name) {
  * - returns their sum
  * - write it as an arrow function
  */
-function sum(a, b) {
-  // Your code here
-}
+sum = (a, b) => a + b;
+
+
 
 /**
  * square(n):
@@ -25,9 +24,7 @@ function sum(a, b) {
  * square(4) -> 16
  * sqaure(10) -> 100
  */
-function square(n) {
-  // Your code here
-}
+square = (n) => n ** 2;
 
 /**
  * 🌶️🌶️
@@ -39,9 +36,9 @@ function square(n) {
  * e.g.
  * squares([1, 2, 3]) -> [1, 4, 9]
  */
-function squares(numbers) {
-  // Your code here
-}
+squares = (numbers) => numbers.map((value, index, array) => value ** 2);
+
+//console.log([1, 2, 3] + ", " + squares([1, 2, 3]));
 
 module.exports = {
   greet,
